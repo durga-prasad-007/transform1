@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @media screen and (max-width: 600px) {
+        /* Adjust styles for screens with a maximum width of 600px */
+        .main {
+            margin-left: 5%;
+        }
+
+        #gh {
+            left: 2%;
+            width: 96%;
+        }
+
+        .main2 {
+            left: 5%;
+        }
+    }
+         #rad:checked~.main{
+            transform: rotate(10deg);
+         }
+         #rad2:checked~.main{
+            transform: rotate(45deg);
+         }
+         #rad3:checked~.main{
+            transform: skew(20deg, 20deg);
+         }
+         #rad4:checked~.main{
+            transform: translate(20px, 20dpx);
+         }
+         #rad5:checked~.main{
+            transform: scale(1, 2);
+         }
+         #rad6:checked~.main{
+            transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+         }
+         .main{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            margin-left: 600px;
+            margin-top: -130px;
+            border-radius: 100px;
+            
+         }
+         #gh{
+            position: absolute;
+            left: 80px;
+            background-color: blue;
+            height: 200px;
+            width: auto;
+         }
+        .main2{
+            position: relative;
+            left: 400px;
+            bottom: 200px;
+           
+        }
+    </style>
+</head>
+<body>
+<div id="gh">
+    <input type="radio" name="rad" id="rad">transform rotate<br>
+    <input type="radio" name="rad" id="rad1">transform none<br>
+    <input type="radio" name="rad" id="rad2">transform rotate<br>
+    <input type="radio" name="rad" id="rad3">transform skew<br>
+    <input type="radio" name="rad" id="rad4">transform translate<br>
+    <input type="radio" name="rad" id="rad5">transform scale<br>
+    <input type="radio" name="rad" id="rad6">transform matrix
+    <div class="main">
+        <div><img src="./WhatsApp Image 2024-01-09 at 01.54.01_eb846c6f.jpg" alt="image" height="400px" width="400px"></div>
+        <div><img src="./WhatsApp Image dpdp.jpg" alt="" height="400" width="400"></div>
+    </div>
+</div>
+
+</body>
+</html>
